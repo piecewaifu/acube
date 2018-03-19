@@ -1,0 +1,243 @@
+﻿@import "reset.css" all;
+
+@font-face {
+    font-family: SFUIDisplaySemi;
+    src: url(SFUIDisplay/SF-UI-Display-Semibold.ttf);
+}
+
+@font-face {
+    font-family: SFUIDisplayRegular;
+    src: url(SFUIDisplay/SF-UI-Display-Regular.ttf);
+}
+
+@font-face {
+    font-family: SFUIDisplayLight;
+    src: url(SFUIDisplay/SF-UI-Display-Light.ttf);
+}
+
+@font-face {
+    font-family: SFUIDisplayHeavy;
+    src: url(SFUIDisplay/SF-UI-Display-Heavy.ttf);
+}
+
+@font-face {
+    font-family: SFUIDisplayBold;
+    src: url(SFUIDisplay/SF-UI-Display-Bold.ttf);
+}
+
+@font-face {
+    font-family: SFUIDisplayBlack;
+    src: url(SFUIDisplay/SF-UI-Display-Black.ttf);
+}
+
+@font-face {
+    font-family: SFUIDisplayMedium;
+    src: url(SFUIDisplay/SF-UI-Display-Medium.ttf);
+}
+
+
+
+body {
+}
+
+h1 {
+    font-size: 48px;
+    font-family: SFUIDisplayBold;
+}
+
+p {
+    font-family: SFUIDisplay-Light;
+}
+
+header {
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(img/header_bg.jpg);
+    position: relative;
+}
+
+    header h1 {
+        margin-bottom: 90px;
+        margin-top: 160px;
+    }
+
+    header p {
+        font-size: 14px;
+        color: #565656;
+        position: relative;
+        margin-top: 230px;
+    }
+
+        header p:before {
+            content: '';
+            background: url(img/mouse.png);
+            width: 25px;
+            height: 43px;
+            display: block;
+            position: absolute;
+            top: -60px;
+            left: 50%;
+            margin-left: -12.5px;
+        }
+
+    header .container {
+        width: 1323px;
+        position: absolute;
+        top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        header .container nav a {
+            text-decoration: none;
+            color: black;
+            padding: 0 17.5px 0 17.5px;
+        }
+
+
+.features {
+    width: 100%;
+    height: 522px;
+    display: flex;
+}
+
+
+    .features .container {
+        width: 580px;
+    }
+
+    .features h1 {
+        margin-bottom: 30px;
+    }
+
+    .features p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        line-height: 30px;
+    }
+
+    .features .modern-design {
+        width: 50%;
+        height: 100%;
+        background: url(img/design.png);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .features .clean-code {
+        width: 50%;
+        height: 100%;
+        background: url(img/code.jpg);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+.button {
+    display: flex;
+    color: white;
+    width: 205px;
+    height: 50px;
+    background-color: rgb(162, 195, 36);
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.directions {
+    width: 100%;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+    .directions ul {
+        width: 1340px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 105px 0 15px 0;
+    }
+
+        .directions ul h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .directions ul p {
+            font-size: 18px;
+            color: #949494;
+            line-height: 30px;
+        }
+
+        .directions ul li {
+            width: 605px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 90px;
+        }
+
+            .directions ul li img {
+                margin-right: 45px;
+            }
+
+
+.carousel {
+    width: 100%;
+    height: 480px;
+    background: black;
+}
+
+.team {
+    width: 100%;
+    height: 900px;
+    background: url(img/team_bg.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .team h1 {
+        color: white;
+        margin-bottom: 40px;
+    }
+
+    .team p {
+        color: #949494;
+        font-size: 18px;
+        text-align: center;
+    }
+
+.members {
+    display: flex;
+    margin: 130px 0 115px 0;
+}
+
+    .members h3 {
+        color: white;
+        font-size: 24px;
+        margin: 30px 0 30px 0;
+    }
+
+    .members li {
+        width: 230px;
+        padding: 0 35px 0 35px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
